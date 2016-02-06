@@ -5,14 +5,14 @@ url: "http://dvll.io" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Type Theme
+  title: dvll.io
   avatar: moustache.png
   gravatar: # Email MD5 hash
   description: "A personal website" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Hi. I'm Romain</p>
+     <p>Hi. I'm Romain.</p>
 
   header_text_feature_image:
   footer_text: >
@@ -29,7 +29,7 @@ theme:
   github: "dvllio"
   google_plus:
   instagram:
-  linkedin:  # Full URL
+  linkedin: "https://uk.linkedin.com/in/devilleromain"
   pinterest:
   reddit:
   soundcloud:
