@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
 <div class="home">
   {% if site.theme.header_text %}

@@ -1,6 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://dvll.io" # the base hostname & protocol for your site
+url: https://dvll.io # the base hostname & protocol for your site
+enforce_ssl: dvll.io
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
