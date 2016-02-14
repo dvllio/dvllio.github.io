@@ -1,3 +1,6 @@
+url: https://dvll.io
+enforce_ssl: dvll.io
+
 # Site settings
 title: dvll.io
 description: "My personal page, build with Jekyll."
