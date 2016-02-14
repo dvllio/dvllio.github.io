@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dvll.io</title>
-    <atom:link href="http://dvll.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>http://dvll.io/</link>
+    <atom:link href="https://dvll.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://dvll.io/</link>
     <description>A personal website</description>
-    <pubDate>Sat, 06 Feb 2016 20:52:14 +0000</pubDate>
+    <pubDate>Sun, 14 Feb 2016 19:50:35 +0000</pubDate>
     
       <item>
         <title>Sample post</title>
-        <link>http://dvll.io/2014/11/30/sample-post.html</link>
-        <guid isPermaLink="true">http://dvll.io/2014/11/30/sample-post.html</guid>
+        <link>https://dvll.io/2014/11/30/sample-post.html</link>
+        <guid isPermaLink="true">https://dvll.io/2014/11/30/sample-post.html</guid>
         <description>&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -38,8 +38,8 @@
     
       <item>
         <title>Feature images</title>
-        <link>http://dvll.io/2014/11/29/feature-images.html</link>
-        <guid isPermaLink="true">http://dvll.io/2014/11/29/feature-images.html</guid>
+        <link>https://dvll.io/2014/11/29/feature-images.html</link>
+        <guid isPermaLink="true">https://dvll.io/2014/11/29/feature-images.html</guid>
         <description>&lt;p&gt;This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>

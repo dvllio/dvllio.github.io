@@ -14,10 +14,10 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="http://dvll.io/">
+	<link rel="canonical" href="https://dvll.io/">
 
 	<!-- RSS -->
-	<link rel="alternate" type="application/atom+xml" title="dvll.io" href="http://dvll.io/feed.xml" />
+	<link rel="alternate" type="application/atom+xml" title="dvll.io" href="https://dvll.io/feed.xml" />
 
 	<!-- Font Awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -132,7 +132,15 @@
 </header>
 
     <div class="content">
-      <div class="home">
+      <script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
+<div class="home">
   
   <div class="call-out" 
   style="background-image: url('/')">
