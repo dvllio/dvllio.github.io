@@ -11,14 +11,16 @@ title: How to fix the OpenVPN client issue in El Capitan
 <p>You'll need to disable System Integrity Protection using the following procedure:</p>
 
 <ul>
-<li>Reboot the Mac and hold down the <code>cmd+R</code> keys simultaneously after the screen turns black until the Mac boots into Recovery Mode.
-<li>When the <b>OS X Utilities</b> screen appears, click on <b>Utilities</b> in the menu bar and select <b>Terminal</b>.
+<li>Reboot the Mac and hold down the <code>cmd+R</code> keys simultaneously after the screen turns black until the Mac boots into Recovery Mode.</li>
+<li>When the <b>OS X Utilities</b> screen appears, click on <b>Utilities</b> in the menu bar and select <b>Terminal</b>.</li>
 <li>To disable SIP, enter the following and press return:
-<code>csrutil disable</code>
-<li>A confirmation message will then ask you to reboot, type <code>reboot</code> and hit return.
+<code>csrutil disable</code></li>
+<li>A confirmation message will then ask you to reboot, type <code>reboot</code> and hit return.</li>
 </ul>
 
 <p></p>
 
-<p>If you wish to re-enable SIP, repeat the above steps and type:
-<code>csrutil enable</code></p>
+<p>You can then uninstall/reinstall the OpenVPN client and eveything should work as expected.</p>
+
+<p>If you wish to re-enable SIP, repeat the above steps but type
+<code>csrutil enable</code> instead and reboot, OpenVPN should still work.</p>
