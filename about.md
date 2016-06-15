@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 ## About
-Meow!
+Contact: hello-blog@dvll.io
