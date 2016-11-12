@@ -1,7 +1,7 @@
 # Site settings
 title: Hi. I'm Romain
 description: 'Project/Product manager in London'
-description2: 'Tech enthusiast, Gamer, aspiring Superhero'
+description2: 'Tech enthusiast, Gamer, Aspiring superhero'
 url: 'https://dvll.io'
 enforce_ssl: dvll.io
 baseurl: '/'
