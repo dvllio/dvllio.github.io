@@ -1,25 +1,31 @@
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<script type="text/javascript">
-    	var host = "dvll.io";
-    	if ((host == window.location.host) && (window.location.protocol != "https:"))
-        	window.location.protocol = "https";
-	</script>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Meta -->
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="generator" content="Jekyll">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
 
-	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
 
-	<!-- CSS & fonts -->
-	<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
-	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="{{ "images/favicons/favicon.ico" | prepend: site.baseurl }}">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="{{ "images/favicons/mstile-144x144.png" | prepend: site.baseurl }}">
+  <meta name="theme-color" content="#ffffff">
 
-	<!-- RSS -->
-	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
-
-	<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
-
+  <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}feed.xml">
 </head>

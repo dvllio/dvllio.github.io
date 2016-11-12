@@ -1,41 +1,35 @@
-var normal = document.getElementById("nav-menu");
-var reverse = document.getElementById("nav-menu-left");
+---
+layout: null
+---
+$(document).ready(function () {
+  $('a.blog-button').click(function (e) {
+    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
+    currentWidth = $('.panel-cover').width()
+    if (currentWidth < 960) {
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.content-wrapper').addClass('animated slideInRight')
+    } else {
+      $('.panel-cover').css('max-width', currentWidth)
+      $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
+    }
+  })
 
-var icon = normal !== null ? normal : reverse;
+  if (window.location.hash && window.location.hash == '#blog') {
+    $('.panel-cover').addClass('panel-cover--collapsed')
+  }
 
-// Toggle the "menu-open" % "menu-opn-left" classes
-function toggle() {
-	  var navRight = document.getElementById("nav");
-	  var navLeft = document.getElementById("nav-left");
-	  var nav = navRight !== null ? navRight : navLeft;
+  if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
+    $('.panel-cover').addClass('panel-cover--collapsed')
+  }
 
-	  var button = document.getElementById("menu");
-	  var site = document.getElementById("wrap");
-	  
-	  if (nav.className == "menu-open" || nav.className == "menu-open-left") {
-	  	  nav.className = "";
-	  	  button.className = "";
-	  	  site.className = "";
-	  } else if (reverse !== null) {
-	  	  nav.className += "menu-open-left";
-	  	  button.className += "btn-close";
-	  	  site.className += "fixed";
-	  } else {
-	  	  nav.className += "menu-open";
-	  	  button.className += "btn-close";
-	  	  site.className += "fixed";
-	    }
-	}
+  $('.btn-mobile-menu').click(function () {
+    $('.navigation-wrapper').toggleClass('visible animated bounceInDown')
+    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+  })
 
-// Ensures backward compatibility with IE old versions
-function menuClick() {
-	if (document.addEventListener && icon !== null) {
-		icon.addEventListener('click', toggle);
-	} else if (document.attachEvent && icon !== null) {
-		icon.attachEvent('onclick', toggle);
-	} else {
-		return;
-	}
-}
+  $('.navigation-wrapper .blog-button').click(function () {
+    $('.navigation-wrapper').toggleClass('visible')
+    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+  })
 
-menuClick();
+})
