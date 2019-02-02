@@ -103,6 +103,7 @@ span {
 
 .icon.twitter {
   background-image: url("../images/icons/twitter_white.png");
+  background-image: url("../images/icons/twitter_colour.png") -9999px -9999px;
 }
 
 .icon.twitter:hover {
@@ -111,6 +112,7 @@ span {
 
 .icon.ig {
   background-image: url("../images/icons/ig_white.png");
+  background-image: url("../images/icons/ig_colour.png") -9999px -9999px;
 }
 
 .icon.ig:hover {
@@ -119,6 +121,7 @@ span {
 
 .icon.linkedin {
   background-image: url("../images/icons/linkedin_white.png");
+  background-image: url("../images/icons/linkedin_colour.png") -9999px -9999px;
 }
 
 .icon.linkedin:hover {
@@ -127,6 +130,7 @@ span {
 
 .icon.contact {
   background-image: url("../images/icons/mail_white.png");
+  background-image: url("../images/icons/mail_green.png") -9999px -9999px;
 }
 
 .icon.contact:hover {
