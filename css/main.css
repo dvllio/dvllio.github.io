@@ -8,6 +8,10 @@ body {
   background-color: #33333F;
   text-align: center;
   height: 100%;
+  font-size: 15pt;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 h1 {
@@ -18,22 +22,83 @@ h4 {
   margin-top: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+span {
+  color: #ff5500;
+}
+
 .box {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   height: 100%;
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-size: 60px;
   display: block;
-  background-size: 50px;
   background-repeat: no-repeat;
   -webkit-transition: background-image 0.2s ease-in-out;
+  -moz-transition: background-image 0.2s ease-in-out;
   transition: background-image 0.2s ease-in-out;
+}
+
+@media (min-device-width: 501px) and (max-device-width: 1024px){
+  body {
+    font-size: 200%;
+  }
+
+  .icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-size: 100px;
+  }
+}
+
+@media (max-device-width: 500px) {
+  body {
+    font-size: 350%;
+  }
+
+  .icon {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-size: 200px;
+  }
+}
+
+@media (max-device-height: 414px){
+  body {
+    font-size: 140%;
+  }
+
+  h1 {
+  margin: 0px;
+  }
+
+  h4 {
+  margin: 10px;
+  }
+
+  p {
+  margin: 0px;
+  }
+
+  .icon {
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  background-size: 90px;
+  }
 }
 
 .icon.twitter {
@@ -65,5 +130,5 @@ h4 {
 }
 
 .icon.contact:hover {
-  background-image: url("../images/icons/mail_red.png");
+  background-image: url("../images/icons/mail_green.png");
 }
