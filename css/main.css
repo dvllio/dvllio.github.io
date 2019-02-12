@@ -30,12 +30,39 @@ span {
   color: #ff5500;
 }
 
+svg {
+  margin: 20px;
+}
+
 .box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+}
+
+.svgicon {
+  pointer-events: bounding-box;
+  -webkit-transition: fill 0.2s ease-in-out;
+  -moz-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+
+.svgicon.twitter:hover {
+  fill: #1da1f2;
+}
+
+.svgicon.ig:hover {
+  fill: url(#ig-gradient) #ee00f6;
+}
+
+.svgicon.linkedin:hover {
+  fill: #0077b5;
+}
+
+.svgicon.contact:hover {
+  fill: #24d125;
 }
 
 .icon {
@@ -99,40 +126,4 @@ span {
   margin: 20px;
   background-size: 90px;
   }
-}
-
-.icon.twitter {
-  background-image: url("../images/icons/twitter_white.png");
-  background-image: url("../images/icons/twitter_colour.png") -9999px -9999px;
-}
-
-.icon.twitter:hover {
-  background-image: url("../images/icons/twitter_colour.png");
-}
-
-.icon.ig {
-  background-image: url("../images/icons/ig_white.png");
-  background-image: url("../images/icons/ig_colour.png") -9999px -9999px;
-}
-
-.icon.ig:hover {
-  background-image: url("../images/icons/ig_colour.png");
-}
-
-.icon.linkedin {
-  background-image: url("../images/icons/linkedin_white.png");
-  background-image: url("../images/icons/linkedin_colour.png") -9999px -9999px;
-}
-
-.icon.linkedin:hover {
-  background-image: url("../images/icons/linkedin_colour.png");
-}
-
-.icon.contact {
-  background-image: url("../images/icons/mail_white.png");
-  background-image: url("../images/icons/mail_green.png") -9999px -9999px;
-}
-
-.icon.contact:hover {
-  background-image: url("../images/icons/mail_green.png");
 }
