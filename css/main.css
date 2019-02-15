@@ -10,8 +10,6 @@ body {
   height: 100%;
   font-size: 15pt;
   user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
 }
 
 h1 {
@@ -44,8 +42,6 @@ svg {
 
 .svgicon {
   pointer-events: bounding-box;
-  -webkit-transition: fill 0.2s ease-in-out;
-  -moz-transition: fill 0.2s ease-in-out;
   transition: fill 0.2s ease-in-out;
 }
 
