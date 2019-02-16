@@ -10,11 +10,10 @@ body {
   height: 100%;
   font-size: 15pt;
   user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
 }
 
 h1 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -30,6 +29,10 @@ span {
   color: #ff5500;
 }
 
+svg {
+  margin: 20px;
+}
+
 .box {
   display: flex;
   align-items: center;
@@ -38,101 +41,123 @@ span {
   height: 100%;
 }
 
-.icon {
-  width: 60px;
-  height: 60px;
-  margin: 20px;
-  background-size: 60px;
-  display: block;
-  background-repeat: no-repeat;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  -moz-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
+.svgicon {
+  pointer-events: bounding-box;
+  transition: fill 0.2s ease-in-out;
 }
 
-@media (min-device-width: 501px) and (max-device-width: 1024px){
+.svgicon.twitter:hover {
+  fill: #1da1f2;
+}
+
+#ig-gradient {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+#ig-gradient:hover {
+  opacity: 1;
+}
+
+.svgicon.linkedin:hover {
+  fill: #0077b5;
+}
+
+.svgicon.contact:hover {
+  fill: #24d125;
+}
+
+@media (orientation: portrait) AND (max-width: 350px) {
+
+  svg {
+    margin: 8px;
+  }
+
+}
+
+@media (orientation: landscape) AND (max-height: 350px) {
+
+  body {
+    font-size: 11pt;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  svg {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media (orientation: portrait) AND (min-width: 351px) AND (max-width: 500px) {
+
+  body {
+    font-size: 150%;
+  }
+
+  svg {
+    margin: 8px;
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+@media (orientation: landscape) AND (min-height: 351px) AND (max-height: 500px) {
+
+  body {
+    font-size: 14pt;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  svg {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media (orientation: portrait) AND (min-width: 768px) AND (max-width: 1024px) {
+
+  body {
+    font-size: 250%;
+  }
+
+  svg {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+@media (orientation: landscape) AND (min-height: 768px) AND (max-height: 1024px) {
+
   body {
     font-size: 200%;
   }
 
-  .icon {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  background-size: 100px;
-  }
-}
-
-@media (max-device-width: 500px) {
-  body {
-    font-size: 350%;
+  svg {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
   }
 
-  .icon {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  background-size: 200px;
-  }
-}
-
-@media (max-device-height: 414px){
-  body {
-    font-size: 140%;
-  }
-
-  h1 {
-  margin: 0px;
-  }
-
-  h4 {
-  margin: 10px;
-  }
-
-  p {
-  margin: 0px;
-  }
-
-  .icon {
-  width: 90px;
-  height: 90px;
-  margin: 20px;
-  background-size: 90px;
-  }
-}
-
-.icon.twitter {
-  background-image: url("../images/icons/twitter_white.png");
-  background-image: url("../images/icons/twitter_colour.png") -9999px -9999px;
-}
-
-.icon.twitter:hover {
-  background-image: url("../images/icons/twitter_colour.png");
-}
-
-.icon.ig {
-  background-image: url("../images/icons/ig_white.png");
-  background-image: url("../images/icons/ig_colour.png") -9999px -9999px;
-}
-
-.icon.ig:hover {
-  background-image: url("../images/icons/ig_colour.png");
-}
-
-.icon.linkedin {
-  background-image: url("../images/icons/linkedin_white.png");
-  background-image: url("../images/icons/linkedin_colour.png") -9999px -9999px;
-}
-
-.icon.linkedin:hover {
-  background-image: url("../images/icons/linkedin_colour.png");
-}
-
-.icon.contact {
-  background-image: url("../images/icons/mail_white.png");
-  background-image: url("../images/icons/mail_green.png") -9999px -9999px;
-}
-
-.icon.contact:hover {
-  background-image: url("../images/icons/mail_green.png");
 }
