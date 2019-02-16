@@ -13,6 +13,7 @@ body {
 }
 
 h1 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -49,8 +50,14 @@ svg {
   fill: #1da1f2;
 }
 
-.svgicon.ig:hover {
-  fill: url(#ig-gradient) #ee00f6;
+#ig-gradient {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+#ig-gradient:hover {
+  opacity: 1;
 }
 
 .svgicon.linkedin:hover {
@@ -61,65 +68,96 @@ svg {
   fill: #24d125;
 }
 
-.icon {
-  width: 60px;
-  height: 60px;
-  margin: 20px;
-  background-size: 60px;
-  display: block;
-  background-repeat: no-repeat;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  -moz-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
+@media (orientation: portrait) AND (max-width: 350px) {
+
+  svg {
+    margin: 8px;
+  }
+
 }
 
-@media (min-device-width: 501px) and (max-device-width: 1024px){
+@media (orientation: landscape) AND (max-height: 350px) {
+
+  body {
+    font-size: 11pt;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  svg {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media (orientation: portrait) AND (min-width: 351px) AND (max-width: 500px) {
+
+  body {
+    font-size: 150%;
+  }
+
+  svg {
+    margin: 8px;
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+@media (orientation: landscape) AND (min-height: 351px) AND (max-height: 500px) {
+
+  body {
+    font-size: 14pt;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  svg {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media (orientation: portrait) AND (min-width: 768px) AND (max-width: 1024px) {
+
+  body {
+    font-size: 250%;
+  }
+
+  svg {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+@media (orientation: landscape) AND (min-height: 768px) AND (max-height: 1024px) {
+
   body {
     font-size: 200%;
   }
 
-  .icon {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  background-size: 100px;
-  }
-}
-
-@media (max-device-width: 500px) {
-  body {
-    font-size: 350%;
+  svg {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
   }
 
-  .icon {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  background-size: 200px;
-  }
-}
-
-@media (max-device-height: 414px){
-  body {
-    font-size: 140%;
-  }
-
-  h1 {
-  margin: 0px;
-  }
-
-  h4 {
-  margin: 10px;
-  }
-
-  p {
-  margin: 0px;
-  }
-
-  .icon {
-  width: 90px;
-  height: 90px;
-  margin: 20px;
-  background-size: 90px;
-  }
 }
