@@ -5,7 +5,7 @@ html {
 body {
   font-family: 'Cabin', sans-serif;
   color: white;
-  background-color: #33333F;
+  background-color: #1f1f1f;
   text-align: center;
   height: 100%;
   font-size: 15pt;
@@ -43,7 +43,8 @@ svg {
 
 .svgicon {
   pointer-events: bounding-box;
-  transition: fill 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  fill: white;
 }
 
 .svgicon.twitter:hover {
@@ -62,6 +63,15 @@ svg {
 
 .svgicon.linkedin:hover {
   fill: #0077b5;
+}
+
+.svgicon.github {
+  fill: none;
+  stroke: white;
+}
+
+.svgicon.github:hover {
+  stroke: #ffd33d;
 }
 
 .svgicon.contact:hover {
